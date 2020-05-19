@@ -127,3 +127,36 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.DS_Store
+*.pyc
+*.pyo
+*.swp
+.env
+env
+env*
+venv
+logs/
+docs/
+.idea/
+ops/__pycache__/*.pyc
+migrations/
+__pycache__/
+requirements.txt
+migrate.sh
+apps/users/__pycache__/
+apps/servers/__pycache__/
+apps/idcs/__pycache__/
+apps/cabinet/__pycache__/
+apps/manufacturer/__pycache__/
+apps/permissions/__pycache__/
+apps/groups/__pycache__/
+apps/servers/migrations/
+apps/idcs/migrations/
+apps/cabinet/migrations/
+apps/products/migrations/
+apps/groups/migrations/
+apps/manufacturers/migrations/
+apps/menu/migrations/
+apps/vpcs/migrations/
+apps/permissions/migrations/
