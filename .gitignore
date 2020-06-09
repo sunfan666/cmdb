@@ -142,8 +142,6 @@ docs/
 ops/__pycache__/*.pyc
 migrations/
 __pycache__/
-requirements.txt
-migrate.sh
 apps/users/__pycache__/
 apps/servers/__pycache__/
 apps/idcs/__pycache__/
