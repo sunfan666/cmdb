@@ -47,7 +47,7 @@ mysql -uroot -p123456 -e "create database phoenix CHARACTER SET utf8;"
 部署 phoenix_cmdb_api
 下载源码
 cd ~
-git clone git@github.com:sunfan666/cmdb.git
+git clone git@github.com:sunfan666/cmdb.git phoenix_cmdb_api
 安装依赖包
 cd phoenix_cmdb_api/
 pip install -r requirements.txt 
