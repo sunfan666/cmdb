@@ -117,7 +117,7 @@ WSGI_APPLICATION = 'ops.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "cmdb",
+        'NAME': "phoenix",
         'USER': 'root',
         'PASSWORD': "123456",
         'HOST': "127.0.0.1",
@@ -205,7 +205,7 @@ SWAGGER_SETTINGS = {
 # JWT 官方文档：https://github.com/GetBlimp/django-rest-framework-jwt/blob/master/docs/index.md
 JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(minutes=5),
-    'JWT_AUTH_HEADER_PREFIX': 'xxx',
+    'JWT_AUTH_HEADER_PREFIX': 'xxxx',
 }
 
 
