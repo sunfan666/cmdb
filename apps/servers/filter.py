@@ -154,7 +154,14 @@ class ServerFilter(django_filters.rest_framework.FilterSet):
 
 
     def search_server(self, queryset, name, value):
-        return queryset.filter(Q(hostname__icontains=value)|Q(ip=value))
+        try:
+            v = Server.objects.filter(ip=value)
+            hostname = v.values()[0]['hostname']
+            return queryset.filter(Q(hostname__icontains=hostname))
+        except:
+            return queryset.filter(Q(hostname__icontains=value) | Q(ip=value))
+
+        # return queryset.filter(Q(hostname__icontains=value)|Q(ip=value))
 
     def search_status(self, queryset, name, value):
         return queryset.filter(Q(status__icontains=value))
